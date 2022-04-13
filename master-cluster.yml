@@ -2,7 +2,7 @@
   become: yes
   tasks:
     - name: Start the cluster
-      shell: kubeadm init --pod-network-cidr=<<  IP Address >> cluster.txt
+      shell: kubeadm init --pod-network-cidr=10.128.0.16 >> cluster.txt
       args:
         chdir: $HOME
         creates: cluster.txt
