@@ -1,3 +1,4 @@
+---
 - hosts: masters
   become: yes
   tasks:
@@ -29,3 +30,4 @@
       args:
         chdir: $HOME
         creates: pod_setup.txt
+---
